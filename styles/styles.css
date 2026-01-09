@@ -14,10 +14,14 @@
 
 :root {}
 
-h2 {
+h2, h3 {
     font-family: watchwordbold;
 }
 
 h1, p {
     font-family: watchwordreg;
+}
+
+h4 {
+    display: none;
 }
