@@ -3,10 +3,21 @@
 }
 
 @font-face {
-        font-family: watchwordbold;
-        src: url("../assets/Watchword_bold_demo.otf");
-    }
+    font-family: watchwordbold;
+    src: url("../assets/Watchword_bold_demo.otf");
+}
 
-:root {
+@font-face {
+    font-family: watchwordreg;
+    src: url("../assets/Watchword_regular_demo.otf");
+}
 
+:root {}
+
+h2 {
+    font-family: watchwordbold;
+}
+
+h1, p {
+    font-family: watchwordreg;
 }
