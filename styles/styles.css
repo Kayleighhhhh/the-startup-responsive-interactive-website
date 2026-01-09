@@ -2,10 +2,11 @@
     box-sizing: border-box;
 }
 
-html {
-    @font-face {
+@font-face {
         font-family: watchwordbold;
-        src: url('assets/Watchword_bold_demo.otf');
+        src: url("../assets/Watchword_bold_demo.otf");
     }
+
+:root {
 
 }
