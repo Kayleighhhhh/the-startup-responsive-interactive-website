@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
@@ -12,16 +14,343 @@
     src: url("../assets/Watchword_regular_demo.otf");
 }
 
-:root {}
+:root {
+    --veronica-main: #0091FF;
+    --veronica-second: #FE0170;
+    --100nl-main: #EF7D00;
+    --100nl-second: #12A638;
+    --slam-main: #E50069;
+    --slam-second: #007AFF;
+    --main-bg: #EEEEEE;
+    --second-bg: #FFFFFF;
+    --header-bg: #08022D;
+    --normal-text: #000000;
+    --faded-text: #383737;
 
-h2, h3 {
-    font-family: watchwordbold;
+    --layout-sc-body:
+        "header header header "
+        "main main main"
+        "player player player";
+
+    --layout-main:
+        "datum logo-veronica logo-nl logo-slam "
+        "uur0 wateennacht nlnonstop1 slamnonstop1"
+        "uur1 wateennacht nlnonstop1 slamnonstop1"
+        "uur2 wateennacht nlnonstop1 slamnonstop1"
+        "uur3 wateennacht nlnonstop1 slamnonstop1"
+        "uur4 vnonstop1   nlnonstop1 slamnonstop1"
+        "uur5 vnonstop1   nlnonstop1 slamnonstop1"
+        "uur6 ekdom       giorgio    marijn"
+        "uur7 ekdom       giorgio    ochtendshow"
+        "uur8 ekdom       giorgio    ochtendshow"
+        "uur9 ekdom       giorgio    ochtendshow"
+        "uur10 goudvanwout barry      jarno"
+        "uur11 goudvanwout barry      jarno"
+        "uur12 sander      barry      housuh"
+        "uur13 sander      erik       housuh"
+        "uur14 bonanza     erik       thomas"
+        "uur15 bonanza     erik       thomas"
+        "uur16 woutenfrank somertijd  thomas"
+        "uur17 woutenfrank somertijd  middagshow"
+        "uur18 woutenfrank somertijd  middagshow"
+        "uur19 niek        koen       middagshow"
+        "uur20 niek        koen       slamnonstop2"
+        "uur21 niek        koen       slamnonstop2"
+        "uur22 vnonstop2   nlnonstop2 slamnonstop2"
+        "uur23 vnonstop2   nlnonstop2 slamnonstop2"
+        "uur24 vnonstop2   nlnonstop2 slamnonstop2";
 }
 
-h1, p {
+h1 {
     font-family: watchwordreg;
+    color: var(--second-bg);
+
+
+}
+
+h2,
+h3 {
+    font-family: watchwordbold;
+    color: var(--normal-text);
 }
 
 h4 {
     display: none;
+}
+
+p {
+    font-family: watchwordreg;
+
+}
+
+body {
+    display: grid;
+    grid-template-areas: var(--layout-sc-body);
+}
+
+header {
+    background-color: var(--header-bg);
+    grid-area: header;
+}
+
+.player {
+    background-color: var(--second-bg);
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    grid-area: player;
+}
+
+.datum {
+    grid-area: datum;
+}
+
+
+aside.tijden,
+section.veronica,
+section.nl100,
+section.slam {
+    display: contents;
+}
+
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: var(--layout-main);
+    background-color: var(--main-bg);
+    grid-template-columns: max-content 1fr 1fr 1fr;
+    grid-template-rows: max-content 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
+section {
+    article {
+        background-color: var(--second-bg);
+        border-radius: 15px;
+        margin: .5em;
+    }
+
+    /* veronica */
+    .logo-veronica {
+        grid-area: logo-veronica;
+        width: 7em;
+    }
+
+    .wateennacht {
+        grid-area: wateennacht;
+    }
+
+    .vnonstop1 {
+        grid-area: vnonstop1;
+    }
+
+    .ekdom {
+        grid-area: ekdom;
+    }
+
+    .goudvanwout {
+        grid-area: goudvanwout;
+    }
+
+    .sander {
+        grid-area: sander;
+    }
+
+    .bonanza {
+        grid-area: bonanza;
+    }
+
+    .woutenfrank {
+        grid-area: woutenfrank;
+    }
+
+    .niek {
+        grid-area: niek;
+    }
+
+    .vnonstop2 {
+        grid-area: vnonstop2;
+    }
+
+    /* 100%nl */
+    .logo-nl {
+        grid-area: logo-nl;
+        width: 7em;
+    }
+
+    .nlnonstop1 {
+        grid-area: nlnonstop1;
+    }
+
+    .giorgio {
+        grid-area: giorgio;
+    }
+
+    .barry {
+        grid-area: barry;
+    }
+
+    .erik {
+        grid-area: erik;
+    }
+
+    .somertijd {
+        grid-area: somertijd;
+    }
+
+    .koen {
+        grid-area: koen;
+    }
+
+    .nlnonstop2 {
+        grid-area: nlnonstop2;
+    }
+
+    /* slam! */
+    .logo-slam {
+        grid-area: logo-slam;
+        width: 7em;
+    }
+
+    .slamnonstop1 {
+        grid-area: slamnonstop1;
+    }
+
+    .marijn {
+        grid-area: marijn;
+    }
+
+    .ochtendshow {
+        grid-area: ochtendshow;
+    }
+
+    .jarno {
+        grid-area: jarno;
+    }
+
+    .housuh {
+        grid-area: housuh;
+    }
+
+    .thomas {
+        grid-area: thomas;
+    }
+
+    .middagshow {
+        grid-area: middagshow;
+    }
+
+    .slamnonstop2 {
+        grid-area: slamnonstop2;
+    }
+
+}
+
+.tijden {
+
+    color: var(--faded-text);
+    background-color: var(--main-bg);
+
+    .uur0 {
+        grid-area: uur0;
+    }
+
+    .uur1 {
+        grid-area: uur1;
+    }
+
+    .uur2 {
+        grid-area: uur2;
+    }
+
+    .uur3 {
+        grid-area: uur3;
+    }
+
+    .uur4 {
+        grid-area: uur4;
+    }
+
+    .uur5 {
+        grid-area: uur5;
+    }
+
+    .uur6 {
+        grid-area: uur6;
+    }
+
+    .uur7 {
+        grid-area: uur7;
+    }
+
+    .uur8 {
+        grid-area: uur8;
+    }
+
+    .uur9 {
+        grid-area: uur9;
+    }
+
+    .uur10 {
+        grid-area: uur10;
+    }
+
+    .uur11 {
+        grid-area: uur11;
+    }
+
+    .uur12 {
+        grid-area: uur12;
+    }
+
+    .uur13 {
+        grid-area: uur13;
+    }
+
+    .uur14 {
+        grid-area: uur14;
+    }
+
+    .uur15 {
+        grid-area: uur15;
+    }
+
+    .uur16 {
+        grid-area: uur16;
+    }
+
+    .uur17 {
+        grid-area: uur17;
+    }
+
+    .uur18 {
+        grid-area: uur18;
+    }
+
+    .uur19 {
+        grid-area: uur19;
+    }
+
+    .uur20 {
+        grid-area: uur20;
+    }
+
+    .uur21 {
+        grid-area: uur21;
+    }
+
+    .uur22 {
+        grid-area: uur22;
+    }
+
+    .uur23 {
+        grid-area: uur23;
+    }
+
+    .uur24 {
+        grid-area: uur24;
+    }
+
 }
