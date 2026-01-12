@@ -169,7 +169,7 @@ main {
     height: 2px;
     background-color: var(--header-bg);
     position: absolute;
-    top: calc(var(--time) / 24 * 99%);
+    top: calc(var(--time) / 24 * 100%);
 }
 
 .zender {
