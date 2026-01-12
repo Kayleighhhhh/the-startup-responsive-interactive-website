@@ -169,7 +169,7 @@ main {
     height: 2px;
     background-color: var(--header-bg);
     position: absolute;
-    top: calc(var(--time) / 25 * 100%);
+    top: calc(var(--time) / 24 * 100%);
 }
 
 .zender {
@@ -203,7 +203,7 @@ section {
 }
 
 .tijden {
-    grid-row: 1 / -1;
+
     display: grid;
     grid-template-rows: subgrid;
     grid-template-columns: subgrid;
