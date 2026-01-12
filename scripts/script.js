@@ -3,15 +3,15 @@ const vandaag = new Date()
 
 // console.log(vandaag)
 
-var maand = vandaag.getMonth()
+let maand = vandaag.getMonth()
 
-var emaand = maand + 1
+let emaand = maand + 1
 
 if (emaand < 10) {emaand = "0" + emaand;}
 
 // console.log(emaand)
 
-var dagen = vandaag.getDate()
+let dagen = vandaag.getDate()
 
 if (dagen < 10) {dagen = "0" + dagen;}
 
