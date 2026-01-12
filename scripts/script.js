@@ -1,5 +1,4 @@
 //datum van vandaag voor de datum picker
-// const vandaag = Date.now()
 const vandaag = new Date()
 
 // console.log(vandaag)
@@ -30,11 +29,11 @@ const tijdlijn = document.querySelector(".timeline")
 
 // haal de huidige tijd op, (automatisch is dat in seconden sinds 1970)
 
-
 if (tijdlijn) {
     const hours = vandaag.getHours()
-    tijdlijn.style.setProperty('--time', `${hours}.${vandaag.getMinutes()}`)
-    
+    const minutes = vandaag.getMinutes()
+    tijdlijn.style.setProperty('--time', `${hours}.${minutes}`)
+
     // wip scroll to active:
     // const activeHourEl = document.querySelector(`.uur${hours}`)
     // console.log(activeHourEl)
