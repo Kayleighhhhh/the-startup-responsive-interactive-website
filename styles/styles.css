@@ -64,8 +64,9 @@
 h1 {
     font-family: watchwordreg;
     color: var(--second-bg);
-
-
+    z-index: 15;
+    align-content: center;
+    padding-left: 1em;
 }
 
 h2,
@@ -91,12 +92,71 @@ body {
 
 header {
     background-color: var(--header-bg);
+    font-family: watchwordreg;
     grid-area: header;
+    height: 5em;
+    position: sticky;
+    z-index: 15;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+        background-color: var(--header-bg);
+        width: 50%;
+        height: 35em;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-radius: 0 0 15px 15px;
+        padding-top: 6em;
+        translate: -200%;
+
+    }
+
+    button {
+        all: unset;
+        color: var(--second-bg);
+        z-index: 10;
+
+        img {
+            width: 3em;
+        }
+    }
+
+    .btn.is-open img {
+        content: url(../assets/x.svg);
+
+    }
+
+    .is-open {
+        translate: 0;
+    }
+
+    details {
+        color: var(--second-bg);
+        padding-left: 2em;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        summary {
+            font-family: watchwordbold;
+        }
+
+        a {
+            all: unset;
+            display: flex;
+            flex-direction: column;
+            color: var(--second-bg);
+        }
+    }
 }
 
 .player {
     background-color: var(--second-bg);
-    width:98%;
+    width: 98%;
     border-radius: 15px;
     display: grid;
     grid-area: player;
@@ -122,7 +182,7 @@ header {
     audio {
         all: unset;
 
-        
+
     }
 
     button {
@@ -178,7 +238,7 @@ main {
     height: 2px;
     background-color: #08022D99;
     position: absolute;
-    top: calc(var(--time) / 24 * 100%);
+    top: calc(var(--time) / 24 * 100% - 19px);
 }
 
 .zender {
