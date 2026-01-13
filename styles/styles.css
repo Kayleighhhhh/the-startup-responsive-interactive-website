@@ -86,6 +86,7 @@ p {
 body {
     display: grid;
     grid-template-areas: var(--layout-sc-body);
+    background-color: var(--main-bg);
 }
 
 header {
@@ -95,11 +96,12 @@ header {
 
 .player {
     background-color: var(--second-bg);
+    width:98%;
     border-radius: 15px;
     display: grid;
     grid-area: player;
-    position: fixed;
-    bottom: 0;
+    position: sticky;
+    bottom: 7px;
     z-index: 10;
     margin: .5em;
     grid-template-columns: auto max-content;
@@ -161,7 +163,7 @@ main {
     grid-template-columns: auto repeat(3, 1fr);
     grid-template-rows: auto repeat(25, 1fr);
     padding-top: .5em;
-    padding-bottom: 5em;
+    /* padding-bottom: 5em; */
 }
 
 .timeline {
