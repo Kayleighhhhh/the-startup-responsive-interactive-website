@@ -164,6 +164,11 @@ main {
     grid-template-rows: auto repeat(25, 1fr);
     padding-top: .5em;
     /* padding-bottom: 5em; */
+    overflow-x: scroll;
+
+    @media (min-width: 670px) {
+        overflow-x: hidden;
+    }
 }
 
 .timeline {
