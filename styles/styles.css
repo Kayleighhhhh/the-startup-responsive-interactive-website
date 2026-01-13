@@ -239,7 +239,8 @@ main {
     height: 2px;
     background-color: #08022D99;
     position: absolute;
-    top: calc(var(--time) / 24 * 100% - 19px);
+    /* top: calc(var(--time) / 24 * 100% - 19px); */
+    top: calc(( var(--hours) + var(--mins) / 60 ) / 25 * 100% );
 }
 
 .zender {

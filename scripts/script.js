@@ -33,12 +33,14 @@ const tijdlijn = document.querySelector(".timeline")
 const hours = vandaag.getHours()
 let minutes = vandaag.getMinutes()
 
-if (minutes < 10) { minutes = "0" + minutes; }
+// if (minutes < 10) { minutes = "0" + minutes; }
 
 console.log(minutes)
 
 if (tijdlijn) {
-    tijdlijn.style.setProperty('--time', `${hours}.${minutes}`)
+    // tijdlijn.style.setProperty('--time', `${hours}.${minutes}`)
+    tijdlijn.style.setProperty('--hours', `${hours}`)
+    tijdlijn.style.setProperty('--mins', `${minutes}`)
 
     // wip scroll to active:
     // const activeHourEl = document.querySelector(`.uur${hours}`)
