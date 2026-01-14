@@ -199,13 +199,14 @@ header {
     grid-row: 1;
     width: 5.5em;
     padding-left: .3em;
+    display: flex;
+    align-items: center;
 }
 
 input[type="date"] {
     background-color: var(--main-bg);
     color: var(--faded-text);
     border: unset;
-    padding-top: .5em;
     font-family: watchwordreg;
     font-size: 16px;
     /* text-align: center; */
