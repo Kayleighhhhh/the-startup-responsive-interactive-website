@@ -197,6 +197,7 @@ header {
 .datum {
     grid-column: 1;
     grid-row: 1;
+    width: 6.5em;
 }
 
 input[type="date"] {
