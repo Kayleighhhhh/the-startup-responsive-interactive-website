@@ -246,7 +246,7 @@ header {
 
         .spellbook {
             display: grid;
-            grid-rows: 1;
+            grid-row: 1;
             grid-column: 1;
             justify-self: center;
             padding: 2em;
@@ -333,6 +333,7 @@ section {
     h2 {
         display: flex;
         justify-self: center;
+      
     }
 
     article {
