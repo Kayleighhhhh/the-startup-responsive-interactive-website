@@ -82,3 +82,6 @@ function toggleMenu() {
     deNav.classList.toggle("is-open");
     menuBtn.classList.toggle("is-open");
 }
+
+// let targetElement = document.querySelector
+tijdlijn?.scrollIntoView({behavior: "smooth", block: "center"});
