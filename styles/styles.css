@@ -342,13 +342,22 @@ section {
         grid-row: calc(var(--row-start) + 1) / calc(var(--row-end) + 1);
         display: grid;
         padding: .5em;
+        grid-template-columns: 1fr max-content;
+        grid-template-rows: 1fr max-content;
 
         h3 {
             font-size: 1em;
+            grid-row: 1;
         }
 
         p {
             align-content: end;
+            grid-row: 2;
+        }
+
+        .info-btn {
+            grid-row: 2;
+            grid-column: 2;
         }
     }
 
