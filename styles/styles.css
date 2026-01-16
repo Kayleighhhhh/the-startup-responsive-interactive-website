@@ -32,7 +32,11 @@
         "main main main"
         "player player player";
 
-    /* --layout-main:
+    --layout-dt-body:
+        "header header"
+        "player main"
+
+        /* --layout-main:
         "datum logo-veronica logo-nl logo-slam "
         "uur0 wateennacht nlnonstop1 slamnonstop1"
         "uur1 wateennacht nlnonstop1 slamnonstop1"
@@ -104,13 +108,14 @@ header {
     nav {
         background-color: var(--header-bg);
         width: 50%;
-        height: 35em;
+        height: fit-content;
+        display: grid;
         position: absolute;
         right: 0;
         top: 0;
         border-radius: 0 0 15px 15px;
-        padding-top: 6em;
-        translate: -200%;
+        padding: 5em 3em 3em 0;
+        translate: -250%;
 
     }
 
@@ -137,13 +142,14 @@ header {
     details {
         color: var(--second-bg);
         padding-left: 2em;
-
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
+        /* display: grid; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* gap: 1em; */
 
         summary {
             font-family: watchwordbold;
+            padding: .3em;
         }
 
         a {
@@ -151,6 +157,36 @@ header {
             display: flex;
             flex-direction: column;
             color: var(--second-bg);
+        }
+    }
+
+    @media (min-width: 630px) {
+        
+        button {
+            display: none;
+        }
+
+        nav {
+            position: relative;
+            translate: 0;
+            display: flex;
+            justify-content: end;
+            height: fit-content;
+            padding: .4em 1em 0 0;
+            /* background-color: unset; */
+            /* padding: 3.3em; */
+            /* top:unset; */
+            width: unset;
+            /* height: unset; */
+        }
+
+        details {
+            padding: 1em;
+            /* display: ruby-text; */
+
+            /* a {
+                flex-direction: row;
+            } */
         }
     }
 }
@@ -243,7 +279,7 @@ main {
     background-color: #08022D99;
     position: absolute;
     /* top: calc(var(--time) / 24 * 100% - 19px); */
-    top: calc(( var(--hours) + var(--mins) / 60 ) / 25 * 100% );
+    top: calc((var(--hours) + var(--mins) / 60) / 25 * 100%);
 }
 
 .zender {
