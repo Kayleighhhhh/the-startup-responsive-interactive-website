@@ -27,6 +27,8 @@
     --normal-text: #000000;
     --faded-text: #383737;
 
+    --header-height: 5rem;
+
     --layout-sc-body:
         "header header header "
         "main main main"
@@ -68,7 +70,7 @@
 h1 {
     font-family: watchwordreg;
     color: var(--second-bg);
-    z-index: 15;
+    /* z-index: 15; */
     align-content: center;
     padding-left: 1em;
 }
@@ -105,7 +107,7 @@ header {
     grid-area: header;
     height: 5em;
     position: sticky;
-    z-index: 15;
+    z-index: 10;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -127,7 +129,7 @@ header {
     button {
         all: unset;
         color: var(--second-bg);
-        z-index: 10;
+        z-index: 1;
 
         img {
             width: 3em;
@@ -167,7 +169,7 @@ header {
     }
 
     @media (min-width: 630px) {
-        
+
         button {
             display: none;
         }
@@ -205,7 +207,7 @@ header {
     grid-area: player;
     position: sticky;
     bottom: 7px;
-    z-index: 12;
+    z-index: 2;
     margin: .5em;
     grid-template-columns: auto max-content;
     grid-template-rows: repeat(2, 1fr);
@@ -240,9 +242,9 @@ header {
         transition: .2s;
         cursor: pointer;
 
-            &:hover {
-                scale: 1.3;
-            }
+        &:hover {
+            scale: 1.3;
+        }
     }
 
     @media (min-width: 1100px) {
@@ -258,16 +260,19 @@ header {
             justify-self: center;
             padding: 2em;
         }
+
         h2 {
             grid-row: 2;
             grid-column: 1;
             justify-self: center;
         }
+
         p {
             grid-row: 3;
             grid-column: 1;
             justify-self: center;
         }
+
         button {
             grid-row: 4;
             grid-column: 1;
@@ -283,6 +288,14 @@ header {
     padding-left: .3em;
     display: flex;
     align-items: center;
+
+    @media (min-width: 670px) {
+            position: sticky;
+            top: var(--header-height);
+            background-color: var(--main-bg);
+            z-index: 2;
+            padding: 0.5rem 0;
+        }
 }
 
 input[type="date"] {
@@ -308,14 +321,14 @@ main {
     background-color: var(--main-bg);
     grid-template-columns: auto repeat(3, 1fr);
     grid-template-rows: auto repeat(25, 1fr);
-    padding-top: .5em;
+    /* padding-top: .5em; */
     /* padding-bottom: 5em; */
     overflow-x: scroll;
     scrollbar-color: var(--faded-text) var(--main-bg);
     scrollbar-width: thin;
 
     @media (min-width: 670px) {
-        overflow-x: hidden;
+        overflow-x: clip;
     }
 }
 
@@ -340,7 +353,16 @@ section {
     .logos {
         display: flex;
         justify-self: center;
-      
+        z-index: 2;
+        
+        @media (min-width: 670px) {
+            position: sticky;
+            top: var(--header-height);
+            background-color: var(--main-bg);
+            width: 100%;
+            justify-content: center;
+            padding: 0.5rem 0;
+        }
     }
 
     article {
@@ -365,7 +387,7 @@ section {
         .info-btn {
             grid-row: 2;
             grid-column: 2;
-            z-index: 11;
+            z-index: 1;
             transition: .2s;
             cursor: pointer;
 
