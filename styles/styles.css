@@ -290,12 +290,12 @@ header {
     align-items: center;
 
     @media (min-width: 670px) {
-            position: sticky;
-            top: var(--header-height);
-            background-color: var(--main-bg);
-            z-index: 2;
-            padding: 0.5rem 0;
-        }
+        position: sticky;
+        top: var(--header-height);
+        background-color: var(--main-bg);
+        z-index: 2;
+        padding: 0.5rem 0;
+    }
 }
 
 input[type="date"] {
@@ -321,7 +321,7 @@ main {
     background-color: var(--main-bg);
     grid-template-columns: auto repeat(3, 1fr);
     grid-template-rows: auto repeat(25, 1fr);
-    /* padding-top: .5em; */
+    padding-top: .5em;
     /* padding-bottom: 5em; */
     overflow-x: scroll;
     scrollbar-color: var(--faded-text) var(--main-bg);
@@ -329,6 +329,7 @@ main {
 
     @media (min-width: 670px) {
         overflow-x: clip;
+        padding-top: 0;
     }
 }
 
@@ -354,7 +355,7 @@ section {
         display: flex;
         justify-self: center;
         z-index: 2;
-        
+
         @media (min-width: 670px) {
             position: sticky;
             top: var(--header-height);
