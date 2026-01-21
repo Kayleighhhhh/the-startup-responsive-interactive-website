@@ -27,6 +27,13 @@ Ik ben mobile first begonnen en heb daarna met media queries sommige onderdelen 
 
 [<img width="342" height="372" alt="voorbeeld3" src="https://github.com/user-attachments/assets/6fe77ec9-0f7f-4bc8-bc43-6e8db328daaa" />](https://github.com/Kayleighhhhh/the-startup-responsive-interactive-website/blob/770827741a9cefb9f50663cfef0476319069bdc5/styles/styles.css#L288-L303)
 
+### Naamgeving
+ik gebruik engelse en nederlandse namen en namen die logish zijn voor mij zoals de naam van het album dat op de afbeelding staat.
+
+[<img width="927" height="113" alt="voorbeeld4" src="https://github.com/user-attachments/assets/acd3cf4f-7cd3-455a-bff7-58816b4025e5" />](https://github.com/Kayleighhhhh/the-startup-responsive-interactive-website/blob/aa983626973860e5e6ba39d45c1813f2efb0154c/index.html#L67-L70)
+
+
+
 
 ## Bronnen
 
