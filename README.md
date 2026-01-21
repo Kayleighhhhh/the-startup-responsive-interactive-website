@@ -34,27 +34,30 @@ Mijn breakpoints staan op 670px, Vanaf daar was er genoeg ruimte voor de header 
 
 ### Toegankelijk
 
+Voor de teogankelijkheid heb ik op verschillende vlakken van de WCAG richtlijnen getest. ik heb de website met een screenreader gestest en en met de tab knopjes om te zien of alles te bereiken was. Ik heb ook de headingsmap goed bijgehouden en heb meerdere keren tijden het coderen de HTML validator gebruikt.
 
-<img width="1903" height="862" alt="confettie2" src="https://github.com/user-attachments/assets/d5aa0b10-12e7-4ee2-81d1-be101121604f" />
-
-Voor de toegankelijkheid heb ik verschillende dingen getest. Ik heb gezorgd dat de lighthouse test op alle vlakken 100 scoorde door de lettertypes te preloaden in de HTML, en door de afleelding in de afspeler een hogere priority te geven tijdens het laden.
 
 ### Huisstijl
-
+<img width="1520" height="863" alt="huisstijlvb2" src="https://github.com/user-attachments/assets/05e97061-febd-4500-933a-74ed7b535faf" />
 
 Ik heb geprobeert om als huisstijl zo veel mogelijk te houden aan de layout van de Veronica, 100%NL en SLAM! websites maar met de kleuren de website toch neutraal te houden.
 
 ### Interactief
 
 
-<img width="1177" height="493" alt="tijdlijn" src="https://github.com/user-attachments/assets/6a3ea679-4939-4da8-b23e-f539ea776c04" />
+https://github.com/user-attachments/assets/73a20ba2-f2c8-4a94-a2ac-ee2b560b3ff9
+
 
 Mijn interactie is de tijdlijn die meeloopt met de echte tijd en wanneer de pagina geladen wordt scrollt de tijdlijn gelijk into view.
 
 
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+### Performance
+
+
+<img width="1903" height="862" alt="confettie2" src="https://github.com/user-attachments/assets/d5aa0b10-12e7-4ee2-81d1-be101121604f" />
+
+Voor de performance heb ik gezorgd dat de lighthouse test 100 scoorde door de lettertypes te preloaden in de HTML, en door de afleelding in de afspeler een hogere priority te geven tijdens het laden.
+
 
 ## Kenmerken
 ### Ademruimte en inspringen
