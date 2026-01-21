@@ -236,6 +236,8 @@ header {
             justify-self: center;
             margin: 2em;
             border-radius: 15px;
+            width:1;
+            height: 1;
         }
 
         h2 {
@@ -254,6 +256,11 @@ header {
             grid-row: 4;
             grid-column: 1;
             justify-self: center;
+
+            img {
+                width: 1;
+                height: 1;
+            }
         }
     }
 }
@@ -368,6 +375,8 @@ section {
             z-index: 1;
             transition: .2s;
             cursor: pointer;
+            width: 1;
+            height: 1;
 
             &:hover {
                 scale: 1.3;
