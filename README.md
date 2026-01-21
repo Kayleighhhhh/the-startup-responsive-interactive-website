@@ -6,6 +6,9 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Beschrijving
+<img width="443" height="485" alt="mobile" src="https://github.com/user-attachments/assets/42f0a3d9-0c5f-4d2a-b14f-253804fb0930" />
+<img width="515" height="437" alt="web" src="https://github.com/user-attachments/assets/3bd6f751-a01a-4a59-a81f-ac7cd8f0e1fb" />
+
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
