@@ -38,33 +38,6 @@
         "header header"
         "player main"
 
-        /* --layout-main:
-        "datum logo-veronica logo-nl logo-slam "
-        "uur0 wateennacht nlnonstop1 slamnonstop1"
-        "uur1 wateennacht nlnonstop1 slamnonstop1"
-        "uur2 wateennacht nlnonstop1 slamnonstop1"
-        "uur3 wateennacht nlnonstop1 slamnonstop1"
-        "uur4 vnonstop1   nlnonstop1 slamnonstop1"
-        "uur5 vnonstop1   nlnonstop1 slamnonstop1"
-        "uur6 ekdom       giorgio    marijn"
-        "uur7 ekdom       giorgio    ochtendshow"
-        "uur8 ekdom       giorgio    ochtendshow"
-        "uur9 ekdom       giorgio    ochtendshow"
-        "uur10 goudvanwout barry      jarno"
-        "uur11 goudvanwout barry      jarno"
-        "uur12 sander      barry      housuh"
-        "uur13 sander      erik       housuh"
-        "uur14 bonanza     erik       thomas"
-        "uur15 bonanza     erik       thomas"
-        "uur16 woutenfrank somertijd  thomas"
-        "uur17 woutenfrank somertijd  middagshow"
-        "uur18 woutenfrank somertijd  middagshow"
-        "uur19 niek        koen       middagshow"
-        "uur20 niek        koen       slamnonstop2"
-        "uur21 niek        koen       slamnonstop2"
-        "uur22 vnonstop2   nlnonstop2 slamnonstop2"
-        "uur23 vnonstop2   nlnonstop2 slamnonstop2"
-        "uur24 vnonstop2   nlnonstop2 slamnonstop2"; */
 }
 
 h1 {
@@ -81,7 +54,7 @@ h3 {
     color: var(--normal-text);
 }
 
-.hiddendatum {
+.hidden {
     display: none;
 }
 
@@ -281,6 +254,26 @@ header {
     }
 }
 
+main {
+    grid-area: main;
+    display: grid;
+    gap: .5rem;
+    background-color: var(--main-bg);
+    grid-template-columns: auto repeat(3, 1fr);
+    grid-template-rows: auto repeat(25, 1fr);
+    padding-top: .5em;
+    /* padding-bottom: 5em; */
+    overflow-x: scroll;
+    scrollbar-color: var(--faded-text) var(--main-bg);
+    scrollbar-width: thin;
+
+    @media (min-width: 670px) {
+        overflow-x: clip;
+        padding-top: 0;
+        padding: 0 1em 0 1em;
+    }
+}
+
 .datum {
     grid-column: 1;
     grid-row: 1;
@@ -311,27 +304,6 @@ input[type="date"] {
 
 ::-webkit-calendar-picker-indicator {
     display: none;
-}
-
-
-main {
-    grid-area: main;
-    display: grid;
-    gap: .5rem;
-    background-color: var(--main-bg);
-    grid-template-columns: auto repeat(3, 1fr);
-    grid-template-rows: auto repeat(25, 1fr);
-    padding-top: .5em;
-    /* padding-bottom: 5em; */
-    overflow-x: scroll;
-    scrollbar-color: var(--faded-text) var(--main-bg);
-    scrollbar-width: thin;
-
-    @media (min-width: 670px) {
-        overflow-x: clip;
-        padding-top: 0;
-        padding: 0 1em 0 1em;
-    }
 }
 
 .timeline {
