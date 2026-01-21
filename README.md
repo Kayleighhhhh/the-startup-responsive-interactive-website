@@ -1,13 +1,21 @@
-Ontwerp en maak een responsive website voor een startup.
 
-De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-startup-responsive-interactieve-website/blob/main/docs/INSTRUCTIONS.md)
-
-# Titel
+# RadioGuide voor Triple.
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Beschrijving
+Mediahuis, via Triple, wil graag een website waarop mensen hun favoriete radioprogramma's kunnen volgen en de tijdlijnen vergelijken om altijd te weten wie er wanneer presenteert.
+
+
 <img width="443" height="485" alt="mobile" src="https://github.com/user-attachments/assets/42f0a3d9-0c5f-4d2a-b14f-253804fb0930" />
 <img width="515" height="437" alt="web" src="https://github.com/user-attachments/assets/3bd6f751-a01a-4a59-a81f-ac7cd8f0e1fb" />
+
+
+Met deze RadioGuide kan je:
+Wisselen tussen verschillende programma’s
+Klikken op de cards voor meer informatie (is nog geen detail pagina voor gemaakt maar de buttons hebben wel al een hover effect)
+Switchen van dagen en radiostations
+Een tijdsindicatie zien die meeloopt met de huidige tijd
+Een weekoverzicht en een overzicht van alle zenders per dag zien.
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
@@ -18,6 +26,11 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 Ik gebuik zelf 4 spaties en laat genoeg ruimete tussen verschillende elementen als die niet bij elkaar horen.
 [<img width="598" height="268" alt="voorbeeld1" src="https://github.com/user-attachments/assets/4818d31c-2afb-41aa-aaea-6236e5a66be5" />](https://github.com/Kayleighhhhh/the-startup-responsive-interactive-website/blob/39edc0b10a6ff41c19bb586ee04ac3dfe139bd1a/index.html#L27C5-L38C27)
 
+```html
+<div>bla</div>
+```
+
+https://github.com/Kayleighhhhh/the-startup-responsive-interactive-website/blob/39edc0b10a6ff41c19bb586ee04ac3dfe139bd1a/index.html#L27C5-L38C27
 
 ### Volgorde en nesten van CSS selectors
 Mijn CSS bestand houd bijna de zelfde volgorde aan als het HTML bestand, het enige verschil is dat er bovenin de root met alle variables staat en daar onder alle h1, h2, h3..enz omdat ik daar gelijk alle lettergroote en lettertypes aan meegegevn heb. verder staan de duidelijke categorieen genest, niet alles staat genest om het overzicht wel te houden.
