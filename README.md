@@ -15,6 +15,12 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 Ik gebuik zelf 4 spaties en laat genoeg ruimete tussen verschillende elementen als die niet bij elkaar horen
 [<img width="598" height="268" alt="voorbeeld1" src="https://github.com/user-attachments/assets/4818d31c-2afb-41aa-aaea-6236e5a66be5" />](https://github.com/Kayleighhhhh/the-startup-responsive-interactive-website/blob/39edc0b10a6ff41c19bb586ee04ac3dfe139bd1a/index.html#L27C5-L38C27)
 
+
+### Volgorde en nesten van CSS selectors
+mijn CSS bestand houd bijna de zelfde volgorde aan als het HTML bestand, het enige verschil is dat er bovenin de root met alle variables staat en daar onder alle h1, h2, h3..enz omdat ik daar gelijk alle lettergroote en lettertypes aan meegegevn heb. verder staan de duidelijke categorieen genest, niet alles staat genest om het overzicht wel te houden.
+
+[<img width="407" height="362" alt="voorbeeld2" src="https://github.com/user-attachments/assets/4f0bb990-02b4-4fd5-ba28-ffc5ea7d40f2" />](https://github.com/Kayleighhhhh/the-startup-responsive-interactive-website/blob/770827741a9cefb9f50663cfef0476319069bdc5/styles/styles.css#L336-L351)
+
 !-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 
 ## Bronnen
