@@ -1,21 +1,58 @@
 
 # RadioGuide voor Triple.
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-
-## Beschrijving
 Mediahuis, via Triple, wil graag een website waarop mensen hun favoriete radioprogramma's kunnen volgen en de tijdlijnen vergelijken om altijd te weten wie er wanneer presenteert.
+
+
+Met deze RadioGuide kan je:
+
+
+Wisselen tussen verschillende programma’s
+
+
+Klikken op de cards voor meer informatie (is nog geen detail pagina voor gemaakt maar de buttons hebben wel al een hover effect)
+
+
+Switchen van dagen en radiostations
+
+
+Een tijdsindicatie zien die meeloopt met de huidige tijd
+
+
+Een weekoverzicht en een overzicht van alle zenders per dag zien.
+## Beschrijving
+
+
+
+### Responsive
 
 
 <img width="443" height="485" alt="mobile" src="https://github.com/user-attachments/assets/42f0a3d9-0c5f-4d2a-b14f-253804fb0930" />
 <img width="515" height="437" alt="web" src="https://github.com/user-attachments/assets/3bd6f751-a01a-4a59-a81f-ac7cd8f0e1fb" />
 
+Mijn breakpoints staan op 670px, Vanaf daar was er genoeg ruimte voor de header om de nav naast elkaar te staan, en 1100px, vanaf daar was er genoeg ruimte om de afspeler naast de radioguide te zetten.
 
-Met deze RadioGuide kan je:
-Wisselen tussen verschillende programma’s
-Klikken op de cards voor meer informatie (is nog geen detail pagina voor gemaakt maar de buttons hebben wel al een hover effect)
-Switchen van dagen en radiostations
-Een tijdsindicatie zien die meeloopt met de huidige tijd
-Een weekoverzicht en een overzicht van alle zenders per dag zien.
+### Toegankelijk
+
+
+<img width="1903" height="862" alt="confettie2" src="https://github.com/user-attachments/assets/d5aa0b10-12e7-4ee2-81d1-be101121604f" />
+
+Voor de toegankelijkheid heb ik verschillende dingen getest. Ik heb gezorgd dat de lighthouse test op alle vlakken 100 scoorde door de lettertypes te preloaden in de HTML, en door de afleelding in de afspeler een hogere priority te geven tijdens het laden.
+
+### Huisstijl
+
+
+Laat kort de belangrijkste onderdelen van de huisstijl zien, en hoe je die hebt verwerkt. Misschien wil je hier wat details uitlichten, waar je rekening mee hebt gehouden.
+
+Ik heb geprobeert om als huisstijl zo veel mogelijk te houden aan de layout van de Veronica, 100%NL en SLAM! websites maar met de kleuren de website toch neutraal te houden.
+
+### Interactief
+
+
+<img width="1177" height="493" alt="tijdlijn" src="https://github.com/user-attachments/assets/6a3ea679-4939-4da8-b23e-f539ea776c04" />
+
+Mijn interactie is de tijdlijn die meeloopt met de echte tijd en wanneer de pagina geladen wordt scrollt de tijdlijn gelijk into view.
+
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
