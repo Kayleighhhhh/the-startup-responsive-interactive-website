@@ -42,8 +42,6 @@ Voor de toegankelijkheid heb ik verschillende dingen getest. Ik heb gezorgd dat 
 ### Huisstijl
 
 
-Laat kort de belangrijkste onderdelen van de huisstijl zien, en hoe je die hebt verwerkt. Misschien wil je hier wat details uitlichten, waar je rekening mee hebt gehouden.
-
 Ik heb geprobeert om als huisstijl zo veel mogelijk te houden aan de layout van de Veronica, 100%NL en SLAM! websites maar met de kleuren de website toch neutraal te houden.
 
 ### Interactief
