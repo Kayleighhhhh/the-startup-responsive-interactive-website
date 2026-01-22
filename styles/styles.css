@@ -28,6 +28,7 @@
     --normal-text: #000000;
     --faded-text: #383737;
     --inverted-text: #FFFFFF;
+    --tijdlijn: #ff0000;
 
     @media (prefers-color-scheme: dark) {
 
@@ -43,6 +44,7 @@
         --normal-text: #ffffff;
         --faded-text: #ffffff;
         --inverted-text: #ffffff;
+        --tijdlijn: #ffffff;
     }
 
     --header-height: 5rem;
@@ -337,7 +339,7 @@ input[type="date"] {
 .timeline {
     width: 100%;
     height: 2px;
-    background-color: red;
+    background-color: var(--tijdlijn);
     position: absolute;
     z-index: 2;
     /* top: calc(var(--time) / 24 * 100% - 19px); */
