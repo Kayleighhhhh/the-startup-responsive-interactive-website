@@ -34,7 +34,7 @@ Mijn breakpoints staan op 670px, Vanaf daar was er genoeg ruimte voor de header 
 
 ### Toegankelijk
 
-Voor de teogankelijkheid heb ik op verschillende vlakken van de WCAG richtlijnen getest. ik heb de website met een screenreader gestest en en met de tab knopjes om te zien of alles te bereiken was. Ik heb ook de headingsmap goed bijgehouden en heb meerdere keren tijden het coderen de HTML validator gebruikt.
+Voor de toegankelijkheid heb ik op verschillende vlakken van de WCAG richtlijnen getest. ik heb de website met een screenreader gestest, hier kwam uit dat de screenreader alleen de naam van de shows en welke tijd die show afspeelt opnoemt maar de rest niet. Met de tab knopjes om te zien of alles te bereiken is, helaas zijn er een aantal dingen waar hij op focust die niet te zien zijn. Ik heb ook de headingsmap goed bijgehouden en heb meerdere keren tijden het coderen de HTML validator gebruikt.
 
 
 ### Huisstijl
@@ -57,6 +57,13 @@ Mijn interactie is de tijdlijn die meeloopt met de echte tijd en wanneer de pagi
 <img width="1903" height="862" alt="confettie2" src="https://github.com/user-attachments/assets/d5aa0b10-12e7-4ee2-81d1-be101121604f" />
 
 Voor de performance heb ik gezorgd dat de lighthouse test 100 scoorde door de lettertypes te preloaden in de HTML, en door de afleelding in de afspeler een hogere priority te geven tijdens het laden.
+
+
+### dark mode
+
+<img width="1896" height="861" alt="darkmode" src="https://github.com/user-attachments/assets/c54afa17-65c3-4891-9e3e-173d76eed10e" />
+
+Ik heb ook een prefers-color-scheme: dark toegevoegd aan de website ook om wat meer kleuren te gebruiken.
 
 
 ## Kenmerken
