@@ -15,34 +15,50 @@
 }
 
 :root {
-    --veronica-main: #0091FF;
+
+    --veronica-main: #FFFFFF;
     --veronica-second: #FE0170;
-    --100nl-main: #EF7D00;
+    --100nl-main: #FFFFFF;
     --100nl-second: #12A638;
-    --slam-main: #E50069;
+    --slam-main: #FFFFFF;
     --slam-second: #007AFF;
     --main-bg: #EEEEEE;
     --second-bg: #FFFFFF;
     --header-bg: #08022D;
     --normal-text: #000000;
     --faded-text: #383737;
+    --inverted-text: #FFFFFF;
+
+    @media (prefers-color-scheme: dark) {
+
+        --veronica-main: #0091FF;
+        --veronica-second: #FE0170;
+        --100nl-main: #EF7D00;
+        --100nl-second: #12A638;
+        --slam-main: #E50069;
+        --slam-second: #007AFF;
+        --main-bg: #070D23;
+        --second-bg: #06021D;
+        --header-bg: #08022D;
+        --normal-text: #ffffff;
+        --faded-text: #ffffff;
+        --inverted-text: #ffffff;
+    }
 
     --header-height: 5rem;
 
-    --layout-sc-body:
-        "header header header "
-        "main main main"
-        "player player player";
+    --layout-sc-body: "header header header "
+    "main main main"
+    "player player player";
 
-    --layout-dt-body:
-        "header header"
-        "player main"
+    --layout-dt-body: "header header"
+    "player main"
 
 }
 
 h1 {
     font-family: watchwordreg;
-    color: var(--second-bg);
+    color: var(--inverted-text);
     /* z-index: 15; */
     align-content: center;
     padding-left: 1em;
@@ -63,6 +79,7 @@ h3 {
 
 p {
     font-family: watchwordreg;
+    color:var(--normal-text);
 
 }
 
@@ -104,7 +121,7 @@ header {
 
     button {
         all: unset;
-        color: var(--second-bg);
+        color: var(--inverted-text);
         z-index: 1;
 
         img {
@@ -123,7 +140,7 @@ header {
     }
 
     details {
-        color: var(--second-bg);
+        color: var(--inverted-text);
         padding-left: 2em;
         cursor: pointer;
         /* display: grid; */
@@ -140,7 +157,7 @@ header {
             all: unset;
             display: flex;
             flex-direction: column;
-            color: var(--second-bg);
+            color: var(--inverted-text);
         }
     }
 
@@ -237,7 +254,7 @@ header {
             justify-self: center;
             margin: 2em;
             border-radius: 15px;
-            width:1;
+            width: 1;
             height: 1;
         }
 
@@ -251,6 +268,7 @@ header {
             grid-row: 3;
             grid-column: 1;
             justify-self: center;
+            display: block;
         }
 
         button {
@@ -323,6 +341,7 @@ input[type="date"] {
     height: 2px;
     background-color: red;
     position: absolute;
+    z-index: 2;
     /* top: calc(var(--time) / 24 * 100% - 19px); */
     top: calc((var(--hours) + var(--mins) / 60) / 25 * 100%);
 }
@@ -352,7 +371,7 @@ section {
     }
 
     article {
-        background-color: var(--second-bg);
+        /* background-color: var(--second-bg); */
         border-radius: 15px;
         grid-row: calc(var(--row-start) + 1) / calc(var(--row-end) + 1);
         display: grid;
@@ -385,6 +404,19 @@ section {
         }
     }
 
+    .veronica, .nl100, .slam {
+        background-color: var(--veronica-main);
+    }
+
+    .nl100 {
+        background-color: var(--100nl-main);
+    }
+
+    .slam {
+        background-color: var(--slam-main);
+    }
+    
+
     /* veronica */
     .logo-veronica {
         width: 7em;
@@ -412,11 +444,12 @@ section {
     grid-column: var(--col-start) / var(--col-end);
     grid-row: 2/-1;
 
-    color: var(--faded-text);
+    
     text-align: center;
     position: relative;
 
     p {
+        color: var(--faded-text);
         grid-column: 1;
     }
 
