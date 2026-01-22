@@ -1,31 +1,86 @@
-Ontwerp en maak een responsive website voor een startup.
 
-De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com/fdnd-task/the-startup-responsive-interactieve-website/blob/main/docs/INSTRUCTIONS.md)
-
-# Titel
+# RadioGuide voor Triple.
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
+Mediahuis, via Triple, wil graag een website waarop mensen hun favoriete radioprogramma's kunnen volgen en de tijdlijnen vergelijken om altijd te weten wie er wanneer presenteert.
 
+
+Met deze RadioGuide kan je:
+
+
+Wisselen tussen verschillende programma’s
+
+
+Klikken op de cards voor meer informatie (is nog geen detail pagina voor gemaakt maar de buttons hebben wel al een hover effect)
+
+
+Switchen van dagen en radiostations
+
+
+Een tijdsindicatie zien die meeloopt met de huidige tijd
+
+
+Een weekoverzicht en een overzicht van alle zenders per dag zien.
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+
+
+
+### Responsive
+
+
+<img width="443" height="485" alt="mobile" src="https://github.com/user-attachments/assets/42f0a3d9-0c5f-4d2a-b14f-253804fb0930" />
+<img width="515" height="437" alt="web" src="https://github.com/user-attachments/assets/3bd6f751-a01a-4a59-a81f-ac7cd8f0e1fb" />
+
+Mijn breakpoints staan op 670px, Vanaf daar was er genoeg ruimte voor de header om de nav naast elkaar te staan, en 1100px, vanaf daar was er genoeg ruimte om de afspeler naast de radioguide te zetten.
+
+### Toegankelijk
+
+Voor de teogankelijkheid heb ik op verschillende vlakken van de WCAG richtlijnen getest. ik heb de website met een screenreader gestest en en met de tab knopjes om te zien of alles te bereiken was. Ik heb ook de headingsmap goed bijgehouden en heb meerdere keren tijden het coderen de HTML validator gebruikt.
+
+
+### Huisstijl
+<img width="1520" height="863" alt="huisstijlvb2" src="https://github.com/user-attachments/assets/05e97061-febd-4500-933a-74ed7b535faf" />
+
+Ik heb geprobeert om als huisstijl zo veel mogelijk te houden aan de layout van de Veronica, 100%NL en SLAM! websites maar met de kleuren de website toch neutraal te houden.
+
+### Interactief
+
+
+https://github.com/user-attachments/assets/73a20ba2-f2c8-4a94-a2ac-ee2b560b3ff9
+
+
+Mijn interactie is de tijdlijn die meeloopt met de echte tijd en wanneer de pagina geladen wordt scrollt de tijdlijn gelijk into view.
+
+
+### Performance
+
+
+<img width="1903" height="862" alt="confettie2" src="https://github.com/user-attachments/assets/d5aa0b10-12e7-4ee2-81d1-be101121604f" />
+
+Voor de performance heb ik gezorgd dat de lighthouse test 100 scoorde door de lettertypes te preloaden in de HTML, en door de afleelding in de afspeler een hogere priority te geven tijdens het laden.
+
 
 ## Kenmerken
 ### Ademruimte en inspringen
 Ik gebuik zelf 4 spaties en laat genoeg ruimete tussen verschillende elementen als die niet bij elkaar horen.
-[<img width="598" height="268" alt="voorbeeld1" src="https://github.com/user-attachments/assets/4818d31c-2afb-41aa-aaea-6236e5a66be5" />](https://github.com/Kayleighhhhh/the-startup-responsive-interactive-website/blob/39edc0b10a6ff41c19bb586ee04ac3dfe139bd1a/index.html#L27C5-L38C27)
 
+https://github.com/Kayleighhhhh/the-startup-responsive-interactive-website/blob/39edc0b10a6ff41c19bb586ee04ac3dfe139bd1a/index.html#L27-L38
 
 ### Volgorde en nesten van CSS selectors
 Mijn CSS bestand houd bijna de zelfde volgorde aan als het HTML bestand, het enige verschil is dat er bovenin de root met alle variables staat en daar onder alle h1, h2, h3..enz omdat ik daar gelijk alle lettergroote en lettertypes aan meegegevn heb. verder staan de duidelijke categorieen genest, niet alles staat genest om het overzicht wel te houden.
 
-[<img width="407" height="362" alt="voorbeeld2" src="https://github.com/user-attachments/assets/4f0bb990-02b4-4fd5-ba28-ffc5ea7d40f2" />](https://github.com/Kayleighhhhh/the-startup-responsive-interactive-website/blob/770827741a9cefb9f50663cfef0476319069bdc5/styles/styles.css#L336-L351)
+https://github.com/Kayleighhhhh/the-startup-responsive-interactive-website/blob/770827741a9cefb9f50663cfef0476319069bdc5/styles/styles.css#L336-L351
 
 ### Nesten van media queries
 Ik ben mobile first begonnen en heb daarna met media queries sommige onderdelen aangepast. ik heb dit gedaan door de media queries te nesten in de onderdelen die aangepast moeten worden.
 
+https://github.com/Kayleighhhhh/the-startup-responsive-interactive-website/blob/770827741a9cefb9f50663cfef0476319069bdc5/styles/styles.css#L288-L303
 
-[<img width="342" height="372" alt="voorbeeld3" src="https://github.com/user-attachments/assets/6fe77ec9-0f7f-4bc8-bc43-6e8db328daaa" />](https://github.com/Kayleighhhhh/the-startup-responsive-interactive-website/blob/770827741a9cefb9f50663cfef0476319069bdc5/styles/styles.css#L288-L303)
+### Naamgeving
+ik gebruik engelse en nederlandse namen en namen die logish zijn voor mij zoals de naam van het album dat op de afbeelding staat.
+
+https://github.com/Kayleighhhhh/the-startup-responsive-interactive-website/blob/aa983626973860e5e6ba39d45c1813f2efb0154c/index.html#L67-L70
+
+
 
 
 ## Bronnen
