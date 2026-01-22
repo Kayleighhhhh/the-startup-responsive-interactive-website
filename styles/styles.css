@@ -24,7 +24,7 @@
     --slam-second: #007AFF;
     --main-bg: #EEEEEE;
     --second-bg: #FFFFFF;
-    --header-bg: #08022D;
+    --header-bg: #06021D;
     --normal-text: #000000;
     --faded-text: #383737;
     --inverted-text: #FFFFFF;
@@ -37,9 +37,9 @@
         --100nl-second: #12A638;
         --slam-main: #E50069;
         --slam-second: #007AFF;
-        --main-bg: #070D23;
+        --main-bg: #010B31;
         --second-bg: #06021D;
-        --header-bg: #08022D;
+        --header-bg: #06021D;
         --normal-text: #ffffff;
         --faded-text: #ffffff;
         --inverted-text: #ffffff;
@@ -219,7 +219,6 @@ header {
         padding: 0 .5em 0 .8em;
         grid-column: 1;
         grid-row: 2;
-        display: none;
     }
 
     audio {
@@ -268,7 +267,6 @@ header {
             grid-row: 3;
             grid-column: 1;
             justify-self: center;
-            display: block;
         }
 
         button {
@@ -316,7 +314,7 @@ main {
         position: sticky;
         top: var(--header-height);
         background-color: var(--main-bg);
-        z-index: 2;
+        z-index: 3;
         padding: 0.5rem 0;
     }
 }
@@ -358,7 +356,7 @@ section {
     .logos {
         display: flex;
         justify-self: center;
-        z-index: 2;
+        z-index: 3;
 
         @media (min-width: 670px) {
             position: sticky;
